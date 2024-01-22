@@ -1,0 +1,28 @@
+org: kaiznanji
+app: serverless
+service: creditrewards-backend
+
+frameworkVersion: '3'
+
+custom:
+  pythonRequirements:
+    dockerizePip: non-linux
+
+provider:
+  name: aws
+  runtime: python3.8
+  region: us-east-1
+  httpApi:
+    cors: true
+
+functions:
+  app:
+    handler: app/main.handler
+    events:
+      - http:
+          method: any
+          path: /{proxy+}
+          cors: true
+
+plugins:
+  - serverless-python-requirements
