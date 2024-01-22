@@ -8,6 +8,7 @@ export const getRewardsPoints = async (transactions) => {
             transactions
         }),
         headers: {
+            "Access-Control-Allow-Origin": "*",
             "Content-Type": "application/json"
         }
     });
@@ -19,6 +20,8 @@ export const getRules = async () => {
     let response = await fetch(BACKEND_URL + "/rules", {
         method: "GET",
         headers: {
+            'Access-Control-Allow-Origin' : '*',
+            'Access-Control-Allow-Headers': 'Content-Type',
             "Content-Type": "application/json"
         }
     });

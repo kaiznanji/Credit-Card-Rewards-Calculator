@@ -9,7 +9,6 @@ const Rules = () => {
         const initialStartup = async () => {
             try {
                 const response = await getRules();
-                console.log(response)
                 if (response.error) {
                     return alert("Failed to get rules");
                 }

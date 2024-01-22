@@ -1,18 +1,22 @@
 from mangum import Mangum
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from starlette.middleware import Middleware
+from starlette.middleware.cors import CORSMiddleware
 
 from app.routers import routers as _routers
 
 def create_app():
-    app = FastAPI(title="credit-rewards-backend")
-
-    app.add_middleware(
+    middleware = [
+    Middleware(
         CORSMiddleware,
-        allow_origins=["*"],
-        allow_methods=["*"],
-        allow_headers=["*"],
+        allow_origins=['*'],
+        allow_credentials=True,
+        allow_methods=['*'],
+        allow_headers=['*']
     )
+]
+    app = FastAPI(title="credit-rewards-backend", middleware=middleware)
 
     register_routers(app)
 

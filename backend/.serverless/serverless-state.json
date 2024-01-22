@@ -223,7 +223,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/creditrewards-backend/dev/1705916482349-2024-01-22T09:41:22.349Z/creditrewards-backend.zip"
+                "S3Key": "serverless/creditrewards-backend/dev/1705919838216-2024-01-22T10:37:18.216Z/creditrewards-backend.zip"
               },
               "Handler": "s_app.handler",
               "Runtime": "python3.8",
@@ -241,14 +241,14 @@
               "AppLogGroup"
             ]
           },
-          "AppLambdaVersionQ8aF2LHytFJ0Kis3vsrj6g9FzdRMh3aLaIiUaHSg": {
+          "AppLambdaVersionmBVGvLk0cgqHsBijUX4sNkBSiYYCCGa2GDivDgS2kI": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "AppLambdaFunction"
               },
-              "CodeSha256": "WAJfEteAgOKG/XODFwtrzvfuGJnL/vsCUFFA4A0vU3c="
+              "CodeSha256": "Ky785lrm0yaGS/PXNvR/v15JqFllCra9XQ+pvu/JiMM="
             }
           },
           "ApiGatewayRestApi": {
@@ -572,7 +572,7 @@
               "AppLambdaPermissionApiGateway"
             ]
           },
-          "ApiGatewayDeployment1705916457040": {
+          "ApiGatewayDeployment1705919789650": {
             "Type": "AWS::ApiGateway::Deployment",
             "Properties": {
               "RestApiId": {
@@ -735,7 +735,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/creditrewards-backend/dev/1705916482349-2024-01-22T09:41:22.349Z/custom-resources.zip"
+                "S3Key": "serverless/creditrewards-backend/dev/1705919838216-2024-01-22T10:37:18.216Z/custom-resources.zip"
               },
               "FunctionName": "creditrewards-backend-dev-custom-resource-apigw-cw-role",
               "Handler": "api-gateway-cloud-watch-role/handler.handler",
@@ -777,7 +777,7 @@
           "AppLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "AppLambdaVersionQ8aF2LHytFJ0Kis3vsrj6g9FzdRMh3aLaIiUaHSg"
+              "Ref": "AppLambdaVersionmBVGvLk0cgqHsBijUX4sNkBSiYYCCGa2GDivDgS2kI"
             },
             "Export": {
               "Name": "sls-creditrewards-backend-dev-AppLambdaFunctionQualifiedArn"
@@ -992,7 +992,7 @@
         "timeout": 6,
         "runtime": "python3.8",
         "vpc": {},
-        "versionLogicalId": "AppLambdaVersionQ8aF2LHytFJ0Kis3vsrj6g9FzdRMh3aLaIiUaHSg"
+        "versionLogicalId": "AppLambdaVersionmBVGvLk0cgqHsBijUX4sNkBSiYYCCGa2GDivDgS2kI"
       }
     },
     "configValidationMode": "warn",
@@ -1025,7 +1025,7 @@
     "artifact": "/Users/kaiznanji/Documents/git/Credit-Card-Rewards-Calculator/backend/.serverless/creditrewards-backend.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/creditrewards-backend/dev/1705916482349-2024-01-22T09:41:22.349Z",
+    "artifactDirectoryName": "serverless/creditrewards-backend/dev/1705919838216-2024-01-22T10:37:18.216Z",
     "artifact": "creditrewards-backend.zip"
   }
 }

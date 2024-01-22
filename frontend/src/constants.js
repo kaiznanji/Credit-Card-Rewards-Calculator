@@ -4,4 +4,4 @@ export const MERCHANTS = {
     subway: "Subway"
 };
 
-export const BACKEND_URL = "https://ewybm0u5ha.execute-api.us-east-1.amazonaws.com/dev";
+export const BACKEND_URL = "http://127.0.0.1:8000";
