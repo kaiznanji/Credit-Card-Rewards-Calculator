@@ -6,7 +6,7 @@ frameworkVersion: '3'
 
 custom:
   pythonRequirements:
-    dockerizePip: non-linux
+    dockerizePip: true
 
 provider:
   name: aws
@@ -20,8 +20,16 @@ functions:
     handler: app/main.handler
     events:
       - http:
-          method: any
-          path: /{proxy+}
+          method: get
+          path: /
+          cors: true
+      - http:
+          method: post
+          path: /rewards
+          cors: true
+      - http:
+          method: get
+          path: /rules
           cors: true
 
 plugins:
