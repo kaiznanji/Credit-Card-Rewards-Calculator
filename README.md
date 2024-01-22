@@ -22,7 +22,7 @@ See the url for the deployed version: https://master.dfnlsjuf81jnf.amplifyapp.co
 
 ![alt text](https://github.com/kaiznanji/Credit-Card-Rewards-Calculator/blob/master/techstack.jpeg?raw=true)
 
-# Details about the project 
+# Project information
 ***The Problem Statement :*** 
 The aim is to create a rewards calculation system that calculates the total monthly reward points earned based on a customer's credit card purchases. More than one reward points calculation rules could apply to a merchant’s transaction(s) and the system should maximize the calculated points for a merchant by considering different priorities or combinations of the rules.
 
