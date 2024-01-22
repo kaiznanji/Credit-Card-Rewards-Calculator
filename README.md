@@ -14,9 +14,10 @@ See the url for the deployed version: https://master.dfnlsjuf81jnf.amplifyapp.co
 3) Run command ```make run``` to start the backend application server
 ### To start frontend
 1) Type ```cd frontend`` in the terminal
-2) Run command ```npm install``` to install all dependencies
-3) Run command ```npm start``` to start the application
-4) Go to http://localhost:3000/ to access the application
+2) Go to src/constants.js and uncomment the localhost backend url and comment out the prod url
+3) Run command ```npm install``` to install all dependencies
+4) Run command ```npm start``` to start the application
+5) Go to http://localhost:3000/ to access the application
 
 
 ![alt text](https://github.com/kaiznanji/Credit-Card-Rewards-Calculator/blob/master/techstack.jpeg?raw=true)
